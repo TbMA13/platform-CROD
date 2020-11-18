@@ -1,7 +1,12 @@
 *
 {
     font-family: 'PT Sans', sans-serif;
-
+    padding: 0;
+    margin: 0;
+}
+header
+{
+    z-index: 100;
 }
 
 /*!БОЛЬШОЙ РАЗМЕР*/
@@ -19,12 +24,19 @@
         padding: 0;
         height: 100%;
     }
+    main
+    {
+        position: relative;
+        margin-top: 47px;
+        width: 100%;
+    }
     /*!HEADER*/
     header
     {
         position: fixed;
         height: 47px;
         width: 100%;
+        top: 0;
 
         display: flex;
         flex-direction: row;
@@ -34,6 +46,7 @@
         background: linear-gradient(270deg, #FDFF9C 7.78%, #FCFF57 18.19%, #D9FF9C 29.07%, #D3FF8A 38.54%, #79FF76 48.48%, #72FF80 58.89%, #68FFA4 68.83%, #98E6FF 79.71%, #40D1FF 91.07%);
         
     }
+
     #header_links_div 
     {
         width: 40%;
@@ -50,12 +63,13 @@
         font-weight: bold;
         color: #000000;
     }
+
     #sign_in_div
     {
         position: relative;
         width: 40px;
         height: 40px;
-        right: 40px;
+        right: 60px;
 
         display: flex;
         justify-content: center;
@@ -69,6 +83,76 @@
         background-image: url(/photos/icons/sign_in.png);
         background-size: contain;
     }
+    /*!ОБЛОЖКА*/
+    .cover
+    {
+        height: 768px;
+        position: relative;
+
+        background: linear-gradient(0deg, #FFFFFF 12.54%, rgba(255, 255, 255, 0) 83.85%), linear-gradient(270deg, #FDFF9C 7.78%, #FCFF57 18.19%, #D9FF9C 29.07%, #D3FF8A 38.54%, #73FF71 48.48%, #72FF80 58.89%, #68FFA4 68.83%, #98E6FF 79.71%, #40D1FF 91.07%);
+    }
+
+    #logo_cover
+    {
+        position: absolute;
+        width: 40%;
+        margin-top: 100px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #logo_cover_img
+    {
+        max-width: 85%;
+        object-fit: contain;
+    }
+    #text_under_logo
+    {
+        font-size: 27px;
+        font-weight: bold;
+    }
+
+    #head_text
+    {
+        position: absolute;
+        top: 120px;
+        left: 45%;
+    }
+    #head_text > p
+    {
+        font-size: 80px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    #social_network_div
+    {
+        position: absolute;
+        top: 130px;
+        right: 60px;
+        width: 40px;
+        height: 300px;
+
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        justify-content: center;
+    }
+    .social_network_icon
+    {
+        min-height: 60px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+    #vk{background-image: url(/photos/icons/VK.png);}
+    #fb{background-image: url(/photos/icons/Facebook.png);}
+    #inst{background-image: url(/photos/icons/Instagram.png);}
+    #YouTube{background-image: url(/photos/icons/YouTube.png);}
+    #tik{background-image: url(/photos/icons/TikTok.png);}
 }
 
 /*!СРЕДНИЙ РАЗМЕР*/
