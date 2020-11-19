@@ -241,7 +241,7 @@ header
     .advanced_search
     {
         position: relative;
-        height: 70px;
+        height: auto;
         border-radius: 15px;
         width: 22%;
         
@@ -249,10 +249,13 @@ header
         justify-content: center;
         align-items: center;
         background: #f2f2f2;
+        filter: drop-shadow(5px 5px 7px rgba(0, 0, 0, 0.25));
     }
     .advanced_search:hover
     {
-        filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.25));
+        /*background: #494747;
+        filter: drop-shadow(5px 5px 7px rgba(0, 0, 0, 0.5));*/
+        background: linear-gradient(270deg, #FCFF57 18.19%, #79FF76 42.92%, #72FF80 59.84%, #40D1FF 91.07%);
     }
     .advanced_search > a
     {
@@ -292,6 +295,78 @@ header
     .arrow:hover
     {
         background: #f2f2f2;
+    }
+
+    /*!FOOTER*/
+
+    footer
+    {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        background: #f2f2f2;
+    }
+
+    #map
+    {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        right: 377px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #map_div
+    {
+        width: 720px;
+        height: 270px;
+    }
+
+    #contacts
+    {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 29%;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #contacts > h2
+    {
+        text-align: center;
+    }
+    #contacts > p
+    {
+        font-size: 24px;
+        text-align: left;
+        margin-top: 15px;
+    }
+    #contacts > p > span
+    {
+        font-weight: bold;
+    }
+
+    #authors
+    {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 75px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #authors > p
+    {
+        font-size: 24px;
+    }
+    #authors > p > span
+    {
+        font-size: 20px;
     }
 }
 
