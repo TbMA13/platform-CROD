@@ -27,7 +27,7 @@ header
     main
     {
         position: relative;
-        margin-top: 47px;
+        margin-top: 55px;
         width: 100%;
         height: auto;
     }
@@ -35,7 +35,7 @@ header
     header
     {
         position: fixed;
-        height: 47px;
+        height: 55px;
         width: 100%;
         top: 0;
 
@@ -228,7 +228,7 @@ header
     }
     .under_projects_search_div
     {
-        width: 47%;
+        width: 50%;
         position: relative;
 
         display: flex;
@@ -241,7 +241,7 @@ header
         position: relative;
         height: auto;
         border-radius: 15px;
-        width: 55%;
+        max-width: 57%;
         
         display: flex;
         justify-content: center;
