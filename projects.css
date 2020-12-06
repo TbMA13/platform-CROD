@@ -1,0 +1,41 @@
+@media screen and (min-width: 1100px)
+{
+    main
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    #projects_preview_container
+    {
+        width: 45%;
+        height: 500px;
+        background: white  ;
+    }
+    #projects_search_container
+    {
+        width: 45%;
+    }
+}
+
+/*!СРЕДНИЙ РАЗМЕР*/
+/*!СРЕДНИЙ РАЗМЕР*/
+/*!СРЕДНИЙ РАЗМЕР*/
+/*!СРЕДНИЙ РАЗМЕР*/
+/*!СРЕДНИЙ РАЗМЕР*/
+
+@media screen and (min-width: 660px) and (max-width: 970px)
+{
+    
+}
+
+/*!МОБИЛЬНЫЕ УСТРОЙСТВА*/
+/*!МОБИЛЬНЫЕ УСТРОЙСТВА*/
+/*!МОБИЛЬНЫЕ УСТРОЙСТВА*/
+/*!МОБИЛЬНЫЕ УСТРОЙСТВА*/
+/*!МОБИЛЬНЫЕ УСТРОЙСТВА*/
+
+@media screen and (maw-width: 659px)
+{
+    
+}
