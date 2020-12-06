@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 *
 {
     font-family: 'PT Sans', sans-serif;
@@ -20,8 +21,6 @@ header
     /*!ВСЁ*/
     body
     {
-        margin: 0;
-        padding: 0;
         height: 100%;
     }
     main
@@ -54,15 +53,29 @@ header
 
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
     }
     .header_link
     {
+        position: relative;
         text-decoration: none;
         font-size: 30px;
         font-weight: bold;
         color: #000000;
+        top: -3px;
+    }
+    #header_link_img
+    {
+        position: relative;
+        height: 50px;
+    }
+    #header_link_img > img
+    {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+        object-position: center;
     }
 
     #sign_in_div
@@ -93,67 +106,7 @@ header
         background: linear-gradient(0deg, #FFFFFF 12.54%, rgba(255, 255, 255, 0) 83.85%), linear-gradient(270deg, #FDFF9C 7.78%, #FCFF57 18.19%, #D9FF9C 29.07%, #D3FF8A 38.54%, #73FF71 48.48%, #72FF80 58.89%, #68FFA4 68.83%, #98E6FF 79.71%, #40D1FF 91.07%);
     }
 
-    #logo_cover
-    {
-        position: absolute;
-        width: 40%;
-        margin-top: 100px;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    #logo_cover_img
-    {
-        max-width: 85%;
-        object-fit: contain;
-    }
-    #text_under_logo
-    {
-        font-size: 27px;
-        font-weight: bold;
-    }
-
-    #head_text
-    {
-        position: absolute;
-        top: 120px;
-        left: 45%;
-    }
-    #head_text > p
-    {
-        font-size: 80px;
-        font-weight: bold;
-        text-align: center;
-    }
-
-    #social_network_div
-    {
-        position: absolute;
-        top: 130px;
-        right: 60px;
-        width: 40px;
-        height: 300px;
-
-        display: flex;
-        flex-direction: column;
-        align-content: space-between;
-        justify-content: center;
-    }
-    .social_network_icon
-    {
-        min-height: 60px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    #vk{background-image: url(/photos/icons/VK.png);}
-    #fb{background-image: url(/photos/icons/Facebook.png);}
-    #inst{background-image: url(/photos/icons/Instagram.png);}
-    #YouTube{background-image: url(/photos/icons/YouTube.png);}
-    #tik{background-image: url(/photos/icons/TikTok.png);}
-
+    
     /*!КОНТЕНТ*/
 
     #video_container
@@ -172,127 +125,6 @@ header
         background: #d5d5d5;
         border-radius: 12px;
     }
-
-
-
-    #projects_container
-    {
-        margin-top: 200px;
-        position: relative;
-        width: 100%;
-        height: auto;
-        margin-bottom: 100px;
-        
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    #projects_text
-    {
-        position: absolute; 
-        top: 0px;
-        font-size: 35px;
-    }
-    #projects_div
-    {
-        position: relative;
-        margin: auto;
-        top: 100px;
-        height: 70%;
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        align-content: space-between;
-    }
-    .two_projects_div
-    {
-        width: 100%;
-        margin-bottom: 50px;
-
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .two_projects_div > a
-    {
-        max-width: 47%;
-    }
-    .two_projects_div > a > img
-    {
-        object-fit: contain;
-        max-width: 100%;
-        border-radius: 20px;
-        filter: drop-shadow(5px 5px 7px rgba(0, 0, 0, 0.25));
-    }
-    .under_projects_search_div
-    {
-        width: 50%;
-        position: relative;
-
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    .advanced_search
-    {
-        position: relative;
-        height: auto;
-        border-radius: 15px;
-        max-width: 57%;
-        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: #f2f2f2;
-        filter: drop-shadow(5px 5px 7px rgba(0, 0, 0, 0.25));
-    }
-    .advanced_search:hover
-    {
-        background: linear-gradient(270deg, #FCFF57 18.19%, #79FF76 42.92%, #72FF80 59.84%, #40D1FF 91.07%);
-    }
-    .advanced_search > a
-    {
-        text-decoration: none;
-        text-align: center;
-        color: #000000;
-        font-size: 25px;
-    }
-    #right_arrow
-    {
-        position: absolute;
-        right: -100px;
-    }
-    #right_arrow > a > img
-    {
-        max-width: 50px;
-        max-height: 50px;
-        object-fit: contain;
-    }
-    #left_arrow
-    {
-        position: absolute;
-        left: -100px;
-    }
-    #left_arrow > a > img
-    {
-        max-width: 50px;
-        max-height: 50px;
-        object-fit: contain;
-    }
-    .arrow
-    {
-        /*TODO:Надо сделать плавную анимацию*/
-        max-height: 50px;
-        border-radius: 10px;
-    }
-    .arrow:hover
-    {
-        background: #f2f2f2;
-    }
-
     /*!FOOTER*/
 
     footer
@@ -303,70 +135,6 @@ header
         background: #f2f2f2;
     }
 
-    #map
-    {
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        right: 377px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    #map_div
-    {
-        width: 720px;
-        height: 270px;
-    }
-
-    #contacts
-    {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        width: 29%;
-    
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    #contacts > h2
-    {
-        text-align: center;
-    }
-    #contacts > p
-    {
-        font-size: 24px;
-        text-align: left;
-        margin-top: 15px;
-    }
-    #contacts > p > span
-    {
-        font-weight: bold;
-    }
-
-    #authors
-    {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 75px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-    }
-    #authors > p
-    {
-        font-size: 24px;
-        text-align: center;
-    }
-    #authors > p > span
-    {
-        font-size: 20px;
-    }
-}
-
 /*!СРЕДНИЙ РАЗМЕР*/
 /*!СРЕДНИЙ РАЗМЕР*/
 /*!СРЕДНИЙ РАЗМЕР*/
@@ -375,11 +143,7 @@ header
 
 @media screen and (min-width: 660px) and (max-width: 970px)
 {
-    body
-    {
-        margin: 0;
-        padding: 0;
-    }
+    
 }
 
 /*!МОБИЛЬНЫЕ УСТРОЙСТВА*/
@@ -390,9 +154,5 @@ header
 
 @media screen and (maw-width: 659px)
 {
-    body
-    {
-        margin: 0;
-        padding: 0;
-    }
+    
 }
