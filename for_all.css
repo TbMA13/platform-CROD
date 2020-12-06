@@ -106,25 +106,6 @@ header
         background: linear-gradient(0deg, #FFFFFF 12.54%, rgba(255, 255, 255, 0) 83.85%), linear-gradient(270deg, #FDFF9C 7.78%, #FCFF57 18.19%, #D9FF9C 29.07%, #D3FF8A 38.54%, #73FF71 48.48%, #72FF80 58.89%, #68FFA4 68.83%, #98E6FF 79.71%, #40D1FF 91.07%);
     }
 
-    
-    /*!КОНТЕНТ*/
-
-    #video_container
-    {
-        position: relative;
-        width: 100%;
-        height: 400px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #video_div
-    {
-        width: 70vw;
-        height: 39vw;
-        background: #d5d5d5;
-        border-radius: 12px;
-    }
     /*!FOOTER*/
 
     footer
