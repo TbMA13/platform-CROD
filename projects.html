@@ -29,7 +29,15 @@
         <div class="project_container" id="projects_search_container">
             <div id="search_block">
                 <form name="search" accept-charset="UTF-8" autocomplete="off" action="">
-                    <input id="search" type="search" placeholder="Поиск по сайту">
+                    <input id="search_projects" type="search" placeholder="Поиск по проектам">
+                    <div id="date">
+                        <p>С</p>
+                        <input name="min_date" type="date">
+                        <p>до</p>
+                        <input name="max_date" type="date">
+                    </div>
+                    <!--Поиск по именам-->
+                    <input id="search_names" type="search">
                     <!--TODO доделать расширенный поиск-->
                 </form>
             </div>
