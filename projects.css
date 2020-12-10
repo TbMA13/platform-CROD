@@ -55,21 +55,27 @@
         padding-left: 5px;
         padding-right: 5px;
     }
+    .search
+    {
+        margin-bottom: 15px;
+    }
     #search_projects
     {
         width: 100%;
         padding-left: 10px;
         padding-right: 10px;
     }
-    #date
+    .date
     {
-        margin-top: 15px;
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 15px;
     }
-    
+    .date > input
+    {
+        max-width: 30%;
+    }
 }
 
 /*!СРЕДНИЙ РАЗМЕР*/

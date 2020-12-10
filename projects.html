@@ -24,20 +24,23 @@
 
         </div>
         <div class="project_container" id="projects_preview_container">
-            
+
+
         </div>
         <div class="project_container" id="projects_search_container">
             <div id="search_block">
                 <form name="search" accept-charset="UTF-8" autocomplete="off" action="">
-                    <input id="search_projects" type="search" placeholder="Поиск по проектам">
-                    <div id="date">
-                        <p>С</p>
+                    <input class="search" id="search_projects" type="search" placeholder="Название проекта">
+                    <input class="search" id="search_projects" type="search" placeholder="Направление проекта">
+                    <input class="search" id="search_projects" type="search" placeholder="ФИО участника">
+                    <div class="date">
+                        <p>Начало временного промежутка</p>
                         <input name="min_date" type="date">
-                        <p>до</p>
+                    </div>
+                    <div class="date">
+                        <p>Конец временного промежутка</p>
                         <input name="max_date" type="date">
                     </div>
-                    <!--Поиск по именам-->
-                    <input id="search_names" type="search">
                     <!--TODO доделать расширенный поиск-->
                 </form>
             </div>
