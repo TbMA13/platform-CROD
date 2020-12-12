@@ -25,7 +25,7 @@
     #head_text
     {
         position: absolute;
-        top: 120px;
+        top: 200px;
         left: 45%;
     }
     #head_text > p
@@ -42,6 +42,7 @@
         right: 60px;
         width: 40px;
         height: 300px;
+        z-index: 50;
 
         display: flex;
         flex-direction: column;
@@ -50,16 +51,24 @@
     }
     .social_network_icon
     {
-        min-height: 60px;
+        z-index: 51;
+        min-height: 40px;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
+        margin-bottom: 20px;
     }
-    #vk{background-image: url(/photos/icons/VK.png);}
-    #fb{background-image: url(/photos/icons/Facebook.png);}
-    #inst{background-image: url(/photos/icons/Instagram.png);}
-    #YouTube{background-image: url(/photos/icons/YouTube.png);}
-    #tik{background-image: url(/photos/icons/TikTok.png);}
+    .social_network_icon:hover
+    {
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    /*TODO добавить hover эффект*/
+    #vk{background-image: url(photos/icons/VK.png);}
+    #fb{background-image: url(photos/icons/Facebook.png);}
+    #inst{background-image: url(photos/icons/Instagram.png);}
+    #YouTube{background-image: url(photos/icons/YouTube.png);}
+    #tik{background-image: url(photos/icons/TikTok.png);}
 
     /**видео*/
     #video_container
@@ -85,7 +94,6 @@
         position: relative;
         width: 100%;
         height: auto;
-        margin-bottom: 100px;
         
         display: flex;
         flex-direction: column;
@@ -105,6 +113,7 @@
         top: 100px;
         height: 70%;
         width: 80%;
+
         display: flex;
         flex-direction: column;
         align-content: space-between;
@@ -197,68 +206,7 @@
         background: #f2f2f2;
     }
 
-    #map
-    {
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        right: 377px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    #map_div
-    {
-        width: 720px;
-        height: 270px;
-    }
 
-    #contacts
-    {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        width: 29%;
-    
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    #contacts > h2
-    {
-        text-align: center;
-    }
-    #contacts > p
-    {
-        font-size: 24px;
-        text-align: left;
-        margin-top: 15px;
-    }
-    #contacts > p > span
-    {
-        font-weight: bold;
-    }
-
-    #authors
-    {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 75px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-    }
-    #authors > p
-    {
-        font-size: 24px;
-        text-align: center;
-    }
-    #authors > p > span
-    {
-        font-size: 20px;
-    }
 }
 
 /*!СРЕДНИЙ РАЗМЕР*/
