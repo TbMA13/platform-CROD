@@ -12,7 +12,7 @@
     }
     .project_container
     {
-        margin-top: 30px;
+        top: 30px;
         position: relative;
         border-radius: 12px;
         background: #f7f7f7;
@@ -29,7 +29,7 @@
     #projects_search_container
     {
         width: 30%;
-        max-height: 240px;
+        height: 280px;
     }
     #search_block
     {
@@ -50,6 +50,7 @@
         flex-wrap: wrap;
         flex-direction: column;
         align-content: space-around;
+        justify-content: space-evenly;
     }
     input
     {
@@ -63,7 +64,6 @@
     }
     .search
     {
-        
         width: 100%;
         padding-left: 10px;
         padding-right: 10px;
@@ -78,6 +78,17 @@
     {
         max-width: 120px;
     }
+    #submit
+    {
+        cursor: pointer;
+        width: 50%;
+        align-self: center;
+    }
+    #submit:hover
+    {
+        
+        background: linear-gradient(270deg, #FCFF57 18.19%, #79FF76 42.92%, #72FF80 59.84%, #40D1FF 91.07%);
+    }
 
 
 
@@ -85,6 +96,7 @@
     {
         min-width: 100%;
         min-height: 100%;
+        position: relative;
         margin-top: 30px;
 
         display: flex;
