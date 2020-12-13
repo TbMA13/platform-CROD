@@ -1,0 +1,85 @@
+/*!БОЛЬШОЙ РАЗМЕР*/
+/*!БОЛЬШОЙ РАЗМЕР*/
+/*!БОЛЬШОЙ РАЗМЕР*/
+/*!БОЛЬШОЙ РАЗМЕР*/
+/*!БОЛЬШОЙ РАЗМЕР*/
+
+@media screen and (min-width: 1100px)
+{
+    #cover
+    {
+        position: absolute !important;
+    }
+    #portfolio_container
+    {
+        width: 100%;
+        height: 900px;
+        position: relative;
+        top: 30px;
+        
+        display: flex;
+        justify-content: center;
+    }
+    #portfolio_block
+    {
+        width: 70%;
+        height: auto;
+        position: relative;
+    }
+    #portfolio_nav
+    {
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        border-radius: 12px;
+        background: #f7f7f7;
+        filter: drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.25));
+    }
+    #portfolio_nav > a
+    {
+        position: relative;
+        text-decoration: none;
+        font-size: 30px;
+        color: black;
+    }
+    #portfolio_nav > a:hover
+    {
+        color: #a3a3a3;
+    }
+    #portfolio
+    {
+        top: 30px;
+        width: 100%;
+        height: 700px;
+        position: relative;
+
+        border-radius: 12px;
+        background: #f7f7f7;
+        filter: drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.25));
+    }
+}
+/*!СРЕДНИЙ РАЗМЕР*/
+/*!СРЕДНИЙ РАЗМЕР*/
+/*!СРЕДНИЙ РАЗМЕР*/
+/*!СРЕДНИЙ РАЗМЕР*/
+/*!СРЕДНИЙ РАЗМЕР*/
+
+@media screen and (min-width: 660px) and (max-width: 970px)
+{
+    
+}
+
+/*!МОБИЛЬНЫЕ УСТРОЙСТВА*/
+/*!МОБИЛЬНЫЕ УСТРОЙСТВА*/
+/*!МОБИЛЬНЫЕ УСТРОЙСТВА*/
+/*!МОБИЛЬНЫЕ УСТРОЙСТВА*/
+/*!МОБИЛЬНЫЕ УСТРОЙСТВА*/
+
+@media screen and (maw-width: 659px)
+{
+    
+}
