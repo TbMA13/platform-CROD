@@ -10,9 +10,16 @@
     {
         position: absolute !important;
     }
+    #projects_container_block
+    {
+        position: relative;
+        top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
     .project_container
     {
-        top: 30px;
         position: relative;
         border-radius: 12px;
         background: #f7f7f7;
