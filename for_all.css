@@ -51,10 +51,9 @@ header
         
     }
 
-    #header_links_div
+    nav
     {
-        position: relative;
-        left: 400px;
+        position: relative; 
         width: 40%;
 
         display: flex;
@@ -186,7 +185,7 @@ header
     {
         font-size: 20px;
     }
-
+}
 /*!СРЕДНИЙ РАЗМЕР*/
 /*!СРЕДНИЙ РАЗМЕР*/
 /*!СРЕДНИЙ РАЗМЕР*/
