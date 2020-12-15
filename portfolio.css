@@ -22,15 +22,9 @@
         height: auto;
         position: relative;
     }
-
-
     #portfolio_search_container
     {
         height: 100px !important;
-    }
-    #portfolio_search_block
-    {
-        
     }
     /*
     #portfolio_nav

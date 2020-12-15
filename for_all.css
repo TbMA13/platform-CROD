@@ -148,7 +148,6 @@ header
     }
     .colors_container
     {
-        
         position: relative;
         border-radius: 12px;
         background: #f7f7f7;
@@ -212,7 +211,7 @@ header
         position: relative;
         width: 100%;
         height: 400px;
-        margin-top: 100px;
+        top: 100px;
         background: #f2f2f2;
     }
     #footer_block
