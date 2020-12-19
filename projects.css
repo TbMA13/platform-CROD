@@ -10,6 +10,52 @@
     {
         position: absolute !important;
     }
+    #right_two_blocks
+    {
+        width: 30%;
+        height: auto;
+    }
+    .right_search_container
+    {
+        width: 100% !important;
+    }
+    a
+    {
+        text-decoration: none;
+    }
+    #project_upload_container
+    {
+        position: relative;
+        top: 30px;
+        width: 100%;
+        height: auto;
+        min-height: 50px;
+
+        background: linear-gradient(90deg, #23B0E6 0%, #09C000 48.95%, #FFDD00 100%);
+    }
+    #project_upload_block
+    {
+        position: relative;
+        min-width: 100%;
+        min-height: 100%;
+
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+    }
+    #project_upload_link
+    {
+        position: relative;
+        font-size: 30px;
+        color: #f7f7f7;
+        bottom: 3px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
     #projects_block
     {
         min-width: 100%;
@@ -34,8 +80,11 @@
     .project_block
     {
         position: relative;
-        width: 45%;
+        width: 342px;
+        height: 192px;
+        border-radius: 10px;
         filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.25));
+        background: #ffffff;
     }
     .project_block > a > img
     {
@@ -46,7 +95,6 @@
         border-radius: 10px;
     }
 }
-
 /*!СРЕДНИЙ РАЗМЕР*/
 /*!СРЕДНИЙ РАЗМЕР*/
 /*!СРЕДНИЙ РАЗМЕР*/

@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="for_all.css">
     <link rel="stylesheet" href="project_upload.css">
     <link rel="shortcut icon" href="photos/favicon.png" type="image/x-icon">
-    <title>Пример проекта</title>
+    <title>Загрузка проекта</title>
 </head>
 <body>
     <main>
@@ -22,72 +22,85 @@
                 </div>
                 <div id="form_block">
                     <form action="">
-                        <div class="" id="left_input_container">
-                            <div class="input_block">
-                                <p>
-                                    Введите название проекта:
-                                </p>
-                                <input placeholder="Название проекта" type="text" name="project_name" id="project_name">
+                        <div id="input_container">
+                            <div class="input_containers" id="left_input_container">
+                                <div class="input_block">
+                                    <p>
+                                        Введите название проекта:
+                                    </p>
+                                    <input required placeholder="Название проекта" type="text" name="project_name" id="project_name">
+                                </div>
+                                <div style="height: 120px;" class="input_block">
+                                    <p>
+                                        Введите краткое описание вашего проекта:
+                                    </p>
+                                    <textarea required maxlength="500" placeholder="Краткое описание проекта" type="text" name="annotation" id="annotation"></textarea>
+                                </div>
+                                <div class="input_block">
+                                    <p>
+                                        Введите название потока:
+                                    </p>
+                                    <input required placeholder="Название потока" type="text" name="change" id="change">
+                                </div>
+                                <div class="input_block">
+                                    <p>
+                                        Введите ФИО вашего наставника:
+                                    </p>
+                                    <input name="teacher" id="teacher" placeholder="Наставник" type="text">
+                                </div>
+                                <div class="input_block">
+                                    <p>
+                                        Введите ФИО каждого участника через запятую:
+                                    </p>
+                                    <input name="partner" id="partner" placeholder="Участники" type="text">
+                                </div>
+                                <!--
+                                <div class="input_block">
+                                    <p>
+                                        Введите даты потока:
+                                    </p>
+                                    <div class="input_date">
+                                        <label for="min-date">с</label>
+                                        <input type="date" name="min-date" id="min-date">
+                                        <label for="max-date">до</label>
+                                        <input type="date" name="max-date" id="max-date">
+                                    </div>
+                                </div>-->
+                                    <!--TODO добавить инпуты личной информации: школа, класс и т.д.-->
                             </div>
-                            <div class="input_block">
-                                <p>
-                                    Введите краткое описание вашего проекта:
-                                </p>
-                                <input placeholder="Краткое описание проекта" type="text" name="annotation" id="annotation">
-                            </div>
-                            <div class="input_block">
-                                <p>
-                                    Введите название потока:
-                                </p>
-                                <input placeholder="Название потока" type="text" name="change" id="change">
-                            </div>
-                            <div class="input_block">
-                                <p>
-                                    Введите ФИО вашего наставника:
-                                </p>
-                                <input placeholder="Наставник" type="text">
-                            </div>
-                            <div class="input_block">
-                                <p>
-                                    Введите даты потока:
-                                </p>
-                                <input type="date" name="min-date" id="min-date">
-                                <input type="date" name="max-date" id="max-date">
-                            </div>
-                            <div class="input_block">
-
-                            </div>
-                        </div>
-                        <div id="right_input_container">
-                            <div class="input_block">
-                                <p>
-                                    Загрузите обложку Вашего проекта:
-                                </p>
-                                <input type="file">
-                            </div>
-                            <div class="input_block">
-                                <p>
-                                    Загрузите презентацию:
-                                </p>
-                                <input type="file">
-                            </div>
-                            <div class="input_block">
-                                <p>
-                                    Загрузите документ Вашего проекта:
-                                </p>
-                                <input type="file">
-                            </div>
-                            <div class="input_block">
-                                <p>
-                                    Загрузите видео Вашего проекта:
-                                </p>
-                                <input type="file">
-                            </div>
-                            <div class="input_block">
-                                <p>
-                                    Загрузите фотографию Вашей команды:
-                                </p>
-                                <input type="file">
+                            <div class="input_containers" id="right_input_container">
+                                <!--TODO допустимые типы файлов-->
+                                <div class="input_block">
+                                    <p>
+                                        Загрузите обложку Вашего проекта:
+                                    </p>
+                                    <input required type="file">
+                                </div>
+                                <div class="input_block">
+                                    <p>
+                                        Загрузите презентацию:
+                                    </p>
+                                    <input type="file">
+                                </div>
+                                <div class="input_block">
+                                    <p>
+                                        Загрузите документ Вашего проекта:
+                                    </p>
+                                    <input type="file">
+                                </div>
+                                <div class="input_block">
+                                    <p>
+                                        Загрузите видео Вашего проекта:
+                                    </p>
+                                    <input type="file">
+                                </div>
+                                <div class="input_block">
+                                    <p>
+                                        Загрузите фотографию Вашей команды:
+                                    </p>
+                                    <label for="Загрузите фотографию Вашей команды:"></label>
+                                    <input type="file">
+                                </div>
                             </div>
                         </div>
                         <div id="submit_block">

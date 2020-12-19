@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="for_all.css">
-    <link rel="stylesheet" href="project_upload.css">
+    <link rel="stylesheet" href="project_example.css">
     <link rel="shortcut icon" href="photos/favicon.png" type="image/x-icon">
-    <title>Загрузка проекта</title>
+    <!--TODO нужно переименовать title-->
+    <title>Страница проекта</title>
 </head>
 <body>
     <header>
@@ -25,9 +26,64 @@
         <div id="cover">
 
         </div>
-        <div class="scale_fix" id="upload_container">
-            <div class="colors_container" id="upload_block">
-                
+        <div class="scale_fix" id="project_container">
+            <div id="content">
+                <div id="top_preview_name_block">
+                    <div id="project_preview">
+                        <img id="preview_img" src="project_preview/preview.png">
+                    </div>
+                    <div id="project_info">
+                        <div class="colors_container" id="change">
+                            <p class="head_text">
+                                Поток:
+                            </p>
+                            <p class="paragraph2">
+                                Янтарные искры
+                            </p>
+                        </div>
+
+                        <div class="colors_container" id="project_teacher">
+                            <p class="head_text">
+                                Наставник:
+                            </p>
+                            <p class="paragraph2">
+                                Тарасов Владислав Андреевич
+                            </p>
+                        </div>
+                        
+                        <div class="colors_container" id="project_files">
+                            <p class="head_text">
+                                Файлы:
+                            </p>
+                            <div id="files">
+                                <!--TODO найти классные иконки-->
+                                <a download href="download/25.pptx">
+                                    <img class="files_icons" src="download/icons/ppt.png">
+                                </a>
+                                <a download href="">
+                                    <img class="files_icons" src="download/icons/doc.png">
+                                </a>
+                                <a  >
+                                    <img class="files_icons" src="download/icons/mp4.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--TODO поменять фото-->
+                <div id="middle_annotation_photo_block">
+                    <div class="colors_container" id="annotation_block">
+                        <p class="head_text">
+                            Краткое описание проекта:
+                        </p>
+                        <p id="annotation">
+                            Мы создаем общую базу проектов, в которой образовательные учреждения (школы, колледжи и вузы) могут хранить результаты проектной деятельности своих учеников или студентов. За время ЯИ мы выполнили первый этап работ – шаблон для отдельной организации (на примере ЦРОДа). Этот шаблон получит образовательное учреждение после регистрации в базе проектов.
+                        </p>
+                    </div>
+                    <div id="photo_block">
+                        <img id="photo" src="project_preview/photo.png">
+                    </div>
+                </div>
             </div>
         </div>
     </main>
