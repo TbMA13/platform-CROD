@@ -17,7 +17,7 @@
             <a class="header_link" href="portfolio.html">Портфолио</a>
         </nav>
         <div id="sign_in_div">
-            <a class="sign_in_link" href=""></a>
+            <a class="sign_in_link" href="autorization.html"></a>
         </div>
         </div>
     </header>
@@ -78,7 +78,7 @@
                     </form>
                 </div>
             </div>
-            <a href="">
+            <a target="_blank" href="project_upload.html">
                 <div class="colors_container" id="project_upload_container">
                     <div id="project_upload_block">
                         <p id="project_upload_link">
@@ -127,5 +127,16 @@
         </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        $("form").keydown(function(event){
+            if(event.keyCode == 13) {
+                event.preventDefault();
+                return false;
+                }
+            });
+        });
+    </script>
 </body>
 </html>

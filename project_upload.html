@@ -21,7 +21,7 @@
                     </h1>
                 </div>
                 <div id="form_block">
-                    <form action="">
+                    <form id="form" autocomplete="off" action="">
                         <div id="input_container">
                             <div class="input_containers" id="left_input_container">
                                 <div class="input_block">
@@ -30,7 +30,7 @@
                                     </p>
                                     <input required placeholder="Название проекта" type="text" name="project_name" id="project_name">
                                 </div>
-                                <div style="height: 120px;" class="input_block">
+                                <div style="height: auto;" class="input_block">
                                     <p>
                                         Введите краткое описание вашего проекта:
                                     </p>
@@ -111,5 +111,26 @@
             </div>
         </div>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        $("form").keydown(function(event){
+            if(event.keyCode == 13) {
+                event.preventDefault();
+                return false;
+                }
+            });
+        });
+    </script>
+    <!--
+    <script>
+        let count = 0;
+        function Check()
+        {
+            alert('тук, тук');
+        }
+        Check();
+    </script>
+    -->
 </body>
 </html>

@@ -1,0 +1,130 @@
+
+/*!БОЛЬШОЙ РАЗМЕР*/
+/*!БОЛЬШОЙ РАЗМЕР*/
+/*!БОЛЬШОЙ РАЗМЕР*/
+/*!БОЛЬШОЙ РАЗМЕР*/
+/*!БОЛЬШОЙ РАЗМЕР*/
+
+@media screen and (min-width: 1100px)
+{
+    body
+    {
+    display: flex;
+    justify-content: center;
+    }
+
+    header
+    {
+        position: fixed !important;
+        justify-content: flex-start !important;
+        
+        z-index: 160 !important;
+        height: auto !important;
+
+        min-height: 100px;
+        min-width: 1100px;
+        width: 100% !important;
+        max-width: 1600px !important;
+        margin: auto !important;
+        background: none !important;
+    }
+    #header_img
+    {
+        object-fit: contain;
+        max-height: 80px;
+        margin-right: 15px;
+    }
+    #header_img_text
+    {
+        font-size: 25px;
+        color: black;
+    }
+    #header_link_logo
+    {
+        z-index: 200;
+        height: auto;
+        width: auto;
+
+        text-decoration: none;
+    }
+    #header_block_logo
+    {
+        position: absolute;
+        top: 30px;
+        left: 50px;
+
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    main
+    {
+        position: absolute;
+        margin: 0 !important;
+        height: auto !important;
+        width: 100% !important;
+        z-index: 149 !important;
+
+        display: flex;
+        justify-content: center;
+    }
+    #cover
+    {
+        top: 0;
+        position: fixed !important;
+        height: 100% !important;
+        background: linear-gradient(270deg, #FDFF9C 7.78%, #FCFF57 18.19%, #D9FF9C 29.07%, #D3FF8A 38.54%, #73FF71 48.48%, #72FF80 58.89%, #68FFA4 68.83%, #98E6FF 79.71%, #40D1FF 91.07%)!important;
+    }
+    #autorization_container
+    {
+        position: absolute;
+        min-height: 100%;
+        height: 100vh;
+
+        max-width: 1600px !important;
+        margin: auto;
+
+        z-index: 150;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #autorization_block
+    {
+        position: relative;
+        height: 425px;
+        width: 600px;
+        z-index: 151;
+
+        display: flex;
+        flex-direction: column;
+    }
+    h1
+    {
+        text-align: center;
+    }
+}
+/*!СРЕДНИЙ РАЗМЕР*/
+/*!СРЕДНИЙ РАЗМЕР*/
+/*!СРЕДНИЙ РАЗМЕР*/
+/*!СРЕДНИЙ РАЗМЕР*/
+/*!СРЕДНИЙ РАЗМЕР*/
+
+@media screen and (min-width: 660px) and (max-width: 970px)
+{
+    
+}
+
+/*!МОБИЛЬНЫЕ УСТРОЙСТВА*/
+/*!МОБИЛЬНЫЕ УСТРОЙСТВА*/
+/*!МОБИЛЬНЫЕ УСТРОЙСТВА*/
+/*!МОБИЛЬНЫЕ УСТРОЙСТВА*/
+/*!МОБИЛЬНЫЕ УСТРОЙСТВА*/
+
+@media screen and (maw-width: 659px)
+{
+    
+}
