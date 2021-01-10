@@ -199,9 +199,8 @@ header
         width: 50%;
         align-self: center;
     }
-    #submit:hover
+    #submit
     {
-        
         background: linear-gradient(270deg, #FCFF57 18.19%, #79FF76 42.92%, #72FF80 59.84%, #40D1FF 91.07%);
     }
     /*!FOOTER*/

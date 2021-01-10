@@ -95,16 +95,173 @@
     #autorization_block
     {
         position: relative;
-        height: 425px;
-        width: 600px;
+        height: 350px;
+        width: 550px;
         z-index: 151;
 
         display: flex;
         flex-direction: column;
     }
+    #autorization
+    {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
     h1
     {
+        position: relative;
+        height: 15%;
         text-align: center;
+
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    #form
+    {
+        position: relative;
+        height: 70%;
+    }
+    form
+    {
+        position: relative;
+        height: auto;
+    }
+    #autoriz_bottom
+    {
+        position: relative;
+        height: 15%;
+        width: 90%;
+        margin: auto;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    input
+    {
+        width: 250px;
+        height: 40px !important;
+        font-size: 17px;
+    }
+    p
+    {
+        display: flex;
+        justify-content: center;
+    }
+    .link_colors
+    {
+        color: #23B0E6;
+        font-size: 17px;
+        text-decoration: none;
+    }/*
+    .link_colors:hover
+    {
+        background: linear-gradient(270deg, #FFDD00 7.78%, #009D3E 62.55%, #23B0E6 98.65%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }*/
+
+
+
+    
+    #registration_block
+    {
+        position: relative;
+        height: auto;
+        width: 700px;
+        z-index: 151;
+
+        display: flex;
+        flex-direction: column;
+    }
+    #registr_h1
+    {
+        height: 52px;
+    }
+    #registr_form
+    {
+        height: auto;
+    }
+    select
+    {
+        outline: none;
+        border: none;
+        border-radius: 7px;
+        background: #ececec;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 260px;
+        height: 40px !important;
+        font-size: 17px;
+        color: #757575;
+    }
+    #registr
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .registr_p
+    {
+        position: relative;
+        margin-top: 31px;
+        width: 240px;
+        max-width: 260px;
+    }
+    .registr_submit
+    {
+        width: 450px !important;
+    }
+    #registr_bottom
+    {
+        position: relative;
+        height: 80px;
+        width: 90%;
+        margin: auto;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    input[type="checkbox"]
+    {
+        margin-bottom: 5px;
+        height: 18px !important;
+        min-width: 30px;
+        width: 30px !important;
+    }
+    .law_block
+    {
+        width: 240px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #recovery_block
+    {
+        position: relative;
+        height: 280px;
+        width: 550px;
+        z-index: 151;
+
+        display: flex;
+        flex-direction: column;
+    }
+    .recovery_p
+    {
+        position: relative;
+        margin-top: 20px;
+        width: 300px;
+        max-width: 300px;
+
+        flex-direction: column !important;
     }
 }
 /*!СРЕДНИЙ РАЗМЕР*/

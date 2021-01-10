@@ -139,15 +139,7 @@
         max-width: 90%;
         display: flex;
         align-content: center; 
-    }/*
-    .input_block > input:focus
-    {
-        border: 2px solid;
-        border-radius: 12px;
-        border-image: linear-gradient(270deg, #FFDD00 7.78%, #009D3E 62.55%, #23B0E6 98.65%);
-        border-image-slice: 1;
-    }*/
-    
+    }
     .input_date
     {
         position: relative;

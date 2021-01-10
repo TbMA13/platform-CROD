@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="autorization.css">
+    <link rel="stylesheet" href="for_all.css">
+    <link rel="shortcut icon" href="photos/favicon.png" type="image/x-icon">
+    <title>Регистрация</title>
+</head>
+<body>
+    <div id="cover">
+
+    </div>
+    <header class="scale_fix">
+        <a id="header_link_logo" href="index.html">
+            <div id="header_block_logo">
+                <img id="header_img" src="photos/logo_cover.png">
+                <p id="header_img_text">
+                    ЦРОД.ПРОЕКТ
+                </p>
+            </div>
+        </a>
+    </header>
+    <main>
+        <div id="autorization_container" class="scale_fix">
+            <div id="registration_block" class="colors_container">
+                <div id="autorization">
+                    <h1 id="registr_h1">
+                        Регистрация
+                    </h1>
+                    <div id="registr_form">
+                        <form id="registr" action="">
+                            <p class="registr_p">
+                                <input required autofocus placeholder="Фамилия" type="text">
+                            </p>
+                            <p class="registr_p">
+                                <input required placeholder="Имя" type="text">
+                            </p>
+                            <p class="registr_p">
+                                <input required placeholder="Отчество" type="text">
+                            </p>
+                            <p class="registr_p">
+                                <input required placeholder="Электронная почта" type="email">
+                            </p>
+                            <p class="registr_p">
+                                <input required placeholder="Номер телефона" type="tel" pattern="8[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]">
+                            </p>
+                            <p class="registr_p">
+                                <select name="" id="">
+                                    <option>Обучающийся</option>
+                                    <option>Наставник</option>
+                                </select>
+                            </p>
+                            <p class="registr_p">
+                                <input id="change" required placeholder="Образовательная организация" type="text">
+                            </p>
+                            <div style="width: 240px !important;" class="registr_p">
+                                <div class="law_block">
+                                    <input required name="law" type="checkbox">
+                                    <label for="law">Я ознакомлен и согласен с <a class="link_colors" href="">правилами сайта</a></label>
+                                </div>
+                                <div class="law_block">
+                                    <input required name="processing" type="checkbox">
+                                    <label for="processing">Я даю согласие на <a class="link_colors" href="">обработку персональных данных</a></label>
+                                </div>
+                            </div>
+                            <p class="registr_p">
+                                <input required id="submit" class="registr_submit" type="submit" value="Зарегестрироваться">
+                            </p>
+                        </form>
+                    </div>
+                    <div id="registr_bottom">
+                        <a class="link_colors" href="autorization.html">Уже есть аккаунт?</a>
+                        <a class="link_colors" href="password_recovery.html">Забыли пароль?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $("select").change(function(){
+        if($(this).val() == "Наставник") $('#change').attr("placeholder", "Место работы");
+        if($(this).val() == "Обучающийся") $('#change').attr("placeholder", "Образовательная организация");
+    });
+</script>
+</html>
