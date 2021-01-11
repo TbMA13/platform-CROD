@@ -24,7 +24,7 @@
     </header>
     <main>
         <div id="autorization_container" class="scale_fix">
-            <div id="recovery_block" class="colors_container">
+            <div id="recovery_link_block" class="colors_container">
                 <div id="autorization">
                     <h1 id="registr_h1">
                         Восстановление пароля
@@ -33,15 +33,19 @@
                     <div>
                         <form action="">
                             <p style="height: 70px; justify-content: space-between;" class="recovery_p">
-                                Введите Вашу электронную почту:
-                                <input placeholder="Электронная почта" type="email">
+                                Придумайте новый пароль
+                                <input placeholder="Пароль" id="new_password_1" type="password">
+                            </p>
+                            <p style="height: 70px; justify-content: space-between;" class="recovery_p">
+                                Введите пароль ещё раз
+                                <input placeholder="Пароль" id="new_password_2" type="password">
                             </p>
                             <p class="recovery_p">
-                                <input id="submit" value="Отправить ссылку" type="submit">
+                                <input id="submit" value="Восстановить" type="submit">
                             </p>
                         </form>
                     </div>
-                    <div id="registr_bottom">
+                    <div id="recovery_link_bottom">
                         <a class="link_colors" href="autorization.html">Вход в систему</a>
                         <a class="link_colors" href="registr.html">Регистрация</a>
                     </div>
@@ -50,4 +54,19 @@
         </div>
     </main>
 </body>
+<script type="text/javascript">
+    window.onload = function () {
+        document.getElementById("new_password_1").onchange = validatePassword;
+        document.getElementById("new_password_2").onchange = validatePassword;
+    }
+    function validatePassword(){
+    var pass2=document.getElementById("new_password_2").value;
+    var pass1=document.getElementById("new_password_1").value;
+    if(pass1!=pass2)
+        document.getElementById("new_password_2").setCustomValidity("Пароли не совпадают");
+    else
+        document.getElementById("new_password_2").setCustomValidity('');
+    //empty string means no validation error
+    }
+    </script>
 </html>

@@ -51,7 +51,7 @@
     {
         position: absolute;
         top: 30px;
-        left: 50px;
+        left: 30px;
 
         display: flex;
         align-items: center;
@@ -95,8 +95,8 @@
     #autorization_block
     {
         position: relative;
-        height: 350px;
-        width: 550px;
+        height: 325px;
+        width: 400px;
         z-index: 151;
 
         display: flex;
@@ -248,7 +248,7 @@
     {
         position: relative;
         height: 280px;
-        width: 550px;
+        width: 450px;
         z-index: 151;
 
         display: flex;
@@ -260,8 +260,33 @@
         margin-top: 20px;
         width: 300px;
         max-width: 300px;
+        font-size: 18px;
 
         flex-direction: column !important;
+        align-items: center;
+    }
+
+    #recovery_link_block
+    {
+        position: relative;
+        height: 350px;
+        width: 400px;
+        z-index: 151;
+
+        display: flex;
+        flex-direction: column;
+    }
+    #recovery_link_bottom
+    {
+        position: relative;
+        height: 60px;
+        width: 90%;
+        margin: auto;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 /*!СРЕДНИЙ РАЗМЕР*/
