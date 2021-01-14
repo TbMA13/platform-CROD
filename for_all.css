@@ -315,7 +315,7 @@ header
     {
         position: relative; 
         width: auto;
-        left: 5px;
+        left: 10px;
 
 
         display: flex;
@@ -401,10 +401,11 @@ header
         outline: none;
         border: none;
         border-radius: 7px;
-        height: 30px;
+        height: 33px;
         background: #ececec;
         padding-left: 5px;
         padding-right: 5px;
+        font-size: 18px;
     }
     .search
     {

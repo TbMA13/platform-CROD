@@ -121,7 +121,93 @@
 /*!МОБИЛЬНЫЕ УСТРОЙСТВА*/
 /*!МОБИЛЬНЫЕ УСТРОЙСТВА*/
 
-@media screen and (maw-width: 659px)
+@media screen and (max-width: 659px)
 {
-    
+    #cover
+    {
+        position: absolute !important;
+    }
+    #portfolios_container
+    {
+        position: relative;
+        width: 100%;
+        top: 20px;
+        margin: auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #portfolio_search_container
+    {
+        position: relative;
+        width: 90%;
+        height: 65px;
+    }
+    #portfolio_search_block
+    {
+        position: relative;
+        width: 91%;
+    }
+    form
+    {
+        flex-wrap: nowrap !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+    }
+    #search_portfolio
+    {
+        width: 75%;
+        padding-left: 10px;
+    }
+    #submit
+    {
+        width: 20% !important;
+    }
+    #portfolio_container
+    {
+        position: relative;
+        margin-top: 30px;
+        width: 90%;
+        height: auto;
+    }
+    #portfolio_block
+    {
+        margin-bottom: 10px;
+        width: 90%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    #portfolio_block > a
+    {
+        text-decoration: none;
+        height: 50px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .search_result
+    {
+        height: 50px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .search_result > img
+    {
+        object-fit: contain;
+        width: 50px;
+    }
+    .search_result > p
+    {
+        width: 80%;
+        font-size: 19px;
+        margin-left: 5px;
+        margin-bottom: 5px;
+        color: black;
+    }
 }
