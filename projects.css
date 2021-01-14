@@ -1,5 +1,34 @@
 @media screen and (min-width: 1100px)
 {
+    /*search*/
+    .projects_portoflio_container
+    {
+        position: relative;
+        top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .left_preview_container
+    {
+        width: 60%;
+        height: auto;
+    }
+
+    .right_search_container
+    {
+        width: 30%;
+        height: 220px;
+    }
+    .search_block
+    {
+        position: relative;
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     main
     {
         display: flex;
@@ -126,7 +155,7 @@
 /*!МОБИЛЬНЫЕ УСТРОЙСТВА*/
 /*!МОБИЛЬНЫЕ УСТРОЙСТВА*/
 
-@media screen and (maw-width: 659px)
+@media screen and (max-width: 659px)
 {
     
 }
