@@ -1,0 +1,361 @@
+/*!БОЛЬШОЙ РАЗМЕР*/
+/*!БОЛЬШОЙ РАЗМЕР*/
+/*!БОЛЬШОЙ РАЗМЕР*/
+/*!БОЛЬШОЙ РАЗМЕР*/
+/*!БОЛЬШОЙ РАЗМЕР*/
+
+@media screen and (min-width: 1100px)
+{
+    main
+    {
+        display: flex;
+        justify-content: center;
+    }
+    #cover
+    {
+        position: absolute !important;
+    }
+    #content
+    {
+        position: relative;
+        height: auto;
+    }
+    #account_nav
+    {
+        position: relative;
+        width: 70%;
+        height: auto;
+        margin: 30px auto 30px auto;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .top_nav
+    {
+        width: auto;
+        height: auto;
+
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .moment
+    {
+        background: #f2f2f2;
+    }
+    .top_nav > p
+    {
+        font-size: 19px;
+        margin: 15px 20px 15px 20px;
+
+        background: linear-gradient(270deg, #FFDD00 7.78%, #009D3E 62.55%, #23B0E6 98.65%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .top_nav:hover
+    {
+        cursor: pointer;
+    }
+
+    #account_content
+    {
+        position: relative;
+        width: 70%;
+        height: auto;
+        margin: 0 auto 0 auto;
+        justify-content: flex-start !important;
+    }
+    .form_block
+    {
+        position: relative;
+        width: 40%;
+        margin: 0 auto 15px 15px;
+    }
+    #form_personal
+    {
+        display: block;
+    }
+    form
+    {
+        justify-content: flex-start !important;
+        flex-wrap: nowrap;
+    }
+    #img_upload
+    {
+        margin-bottom: 5px;
+    }
+    #img_block
+    {
+        margin: 5px auto 10px 0;
+    }
+    img
+    {
+        max-width: 400px;
+        max-height: 400px;
+        border-radius: 10px;
+        object-fit: contain;
+    }
+    input[type="file"]
+    {
+        padding-top: 10px;
+        padding-left: 25px;
+    }
+    .div_margin
+    {
+        position: relative;
+        margin: 5px auto 5px 0;
+    }
+    .info_p
+    {
+        min-width: 200px;
+        width: auto;
+        text-align: left;
+        border-radius: 7px;
+        margin-top: 5px;
+        padding: 3px 3px 3px 3px;
+        height: 25px;
+        font-size: 18px;
+        background: #ececec;
+    }
+    .hide_input
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    input[type="checkbox"]
+    {
+        margin-right: 5px;
+    }
+    .link_block
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+    .link_block > input
+    {
+        width: 210px;
+        height: 25px;
+    }
+    .link
+    {
+        color: #23B0E6;
+        text-decoration: none;
+        margin-right: 5px;
+    }
+    #submit
+    {
+        width: auto;
+        font-size: 17px;
+    }
+    #form_about_me
+    {
+        display: none;
+    }
+    #diploma_block
+    {
+        margin: 5px auto 10px 0;
+    }
+    #diploma_text
+    {
+        width: auto;
+        min-width: 270px;
+        max-width: 270px;
+
+        height: auto;
+        min-height: 75px;
+        max-height: 75px;
+
+        margin-top: 10px;
+        
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        background: #ececec;
+    }
+    /*!Слайдер*/
+        /* Собственно сам слайдер */
+    .slider{
+        max-width: 100%;
+        position: relative;
+        left: 35px;
+        margin: auto;
+        height: 250px;
+        margin-bottom: 15px;
+    }
+    /* Картинка мастабируется по отношению к родительскому элементу */
+    .slider .item img {
+        object-fit: contain;
+        width: 100%;
+        height: 250px;
+        border: none !important;
+        box-shadow: none !important;
+    }
+    /* Кнопки вперед и назад */
+    .slider .prev, .slider .next {
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: #aaa;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+    }
+    .slider .prev
+    {
+        left: -45px;
+    }
+    .slider .next {
+        right: -45px;
+        border-radius: 3px 0 0 3px;
+    }
+    /* При наведении на кнопки добавляем фон кнопок */
+    .slider .prev:hover,
+    .slider .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    /* Заголовок слайда */
+    .slideText {
+        position: absolute;
+        color: #fff;
+        font-size: 35px;
+        /* Выравнивание текста по горизонтали и по вертикали*/
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        /* Тень*/
+        text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+    }
+    /* Кружочки */
+    .slider-dots {
+        text-align: center;
+    }
+    .slider-dots_item{
+        cursor: pointer;
+        height: 12px;
+        width: 12px;
+        margin: 0 2px;
+        background-color: #ddd;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    .active,
+    .slider-dots_item:hover {
+        background-color: #aaa;
+    }
+    /* Анимация слайдов */
+    .slider .item {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    @-webkit-keyframes fade {
+        from {
+            opacity: .4
+        }
+        to {
+            opacity: 1
+        }
+    }
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+        to {
+            opacity: 1
+        }
+}
+
+
+    #form_projects
+    {
+        display: none;
+        width: 90%;
+        margin: auto;
+    }
+    #projects_block
+    {
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-top: 30px;
+
+        display: flex;
+        flex-direction: column;
+    }
+    .two_projects_block
+    {
+        position: relative;
+        width: 100%;
+        max-height: 211px;
+        margin-bottom: 30px;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .project_block
+    {
+        position: relative;
+        width: 342px;
+        height: 192px;
+        border-radius: 10px;
+        filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.25));
+        background: #ffffff;
+    }
+    .project_block > a
+    {
+        min-width: 100%;
+        min-height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        
+    }
+    .project_block > a > img
+    {
+        min-width: 100%;
+        min-height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        
+        object-fit: fill;
+        object-position: center;
+        border-radius: 10px;
+    }
+
+}
+/*!СРЕДНИЙ РАЗМЕР*/
+/*!СРЕДНИЙ РАЗМЕР*/
+/*!СРЕДНИЙ РАЗМЕР*/
+/*!СРЕДНИЙ РАЗМЕР*/
+/*!СРЕДНИЙ РАЗМЕР*/
+
+@media screen and (min-width: 660px) and (max-width: 970px)
+{
+    
+}
+
+/*!МОБИЛЬНЫЕ УСТРОЙСТВА*/
+/*!МОБИЛЬНЫЕ УСТРОЙСТВА*/
+/*!МОБИЛЬНЫЕ УСТРОЙСТВА*/
+/*!МОБИЛЬНЫЕ УСТРОЙСТВА*/
+/*!МОБИЛЬНЫЕ УСТРОЙСТВА*/
+
+@media screen and (maw-width: 659px)
+{
+    
+}
