@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="for_all.css">
+    <link rel="stylesheet" href="account_example.css">
+    <link rel="shortcut icon" href="photos/favicon.png" type="image/x-icon">
+    <title>Профиль</title>
+</head>
+
+<body>
+    <header>
+        <div class="scale_fix" id="header_block">
+            <nav>
+                <a class="header_link" href="projects.html">Проекты</a>
+                <a id="header_link_img" href="index.html"><img src="photos/logo_cover.png"></a>
+                <a class="header_link" href="portfolio.html">Портфолио</a>
+            </nav>
+            <div id="sign_in_div">
+                <a class="sign_in_link" href="autorization.html"></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="cover">
+        </div>
+        <div id="content" class="scale_fix">
+            <div id="account_nav">
+                <div onclick="personal_data()" class="top_nav colors_container moment" id="personal_data">
+                    <p>
+                        Личные данные
+                    </p>
+                </div>
+                <div onclick="about_me()" class="top_nav colors_container" id="about_me">
+                    <p>
+                        Достижения
+                    </p>
+                </div>
+                <div onclick="projects()" class="top_nav colors_container" id="projects">
+                    <p>
+                        Проекты
+                    </p>
+                </div>
+            </div>
+            <div class="colors_container" id="account_content">
+                <div class="form_block" id="form_personal">
+                    <form action="">
+                        <div class="div_margin" id="img_upload">
+                            <h2>
+                                Фотография
+                            </h2>
+                            <div id="img_block">
+                                <img id="img" src="">
+                            </div>
+                        </div>
+                        <div class="div_margin" id="name">
+                            <h2>
+                                ФИО
+                            </h2>
+                            <p class="info_p">Иванов</p>
+                            <p class="info_p">Иван</p>
+                            <p class="info_p">Иванович</p>
+                        </div>
+                        <div class="div_margin" id="date">
+                            <h2>
+                                Дата рождения
+                            </h2>
+                            <p class="info_p">01.01.2001</p>
+                            
+                        </div>
+                        <div class="div_margin" id="school">
+                            <h2>
+                                Образовательная организация
+                            </h2>
+                            <p class="info_p">
+                                МБОУ СОШ "ТЕСТ"
+                            </p>
+                        </div>
+                        <div class="div_margin" id="city">
+                            <h2>
+                                Населенный пункт
+                                </h1>
+                                <p class="info_p">
+                                    Калиниград
+                                </p>
+                        </div>
+                        <div class="div_margin" id="social_media_links">
+                            <h2>
+                                Ссылки на социальные сети
+                            </h2>
+                            <div class="link_block">
+                                <a style="color: #2787F5;" class="link" href="">ВКонтакте</a>
+                            </div>
+                            <div class="link_block">
+                                <a style="color: none !important; background: linear-gradient(90deg, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;" class="link" href="">Instagram</a>
+                            </div>
+                            <div class="link_block">
+                                <a style="color: black !important; " class="link" href="">Tik-tok</a>
+                            </div>
+                        </div>
+                        <div class="div_margin" id="phone_number">
+                            <h2>
+                                Номер телефона
+                            </h2>
+                            <p class="info_p">
+                                8 (8800) 55-55
+                            </p>
+                        </div>
+                        <div class="div_margin" id="email">
+                            <h2>
+                                Электронная почта
+                            </h2>
+                            <p class="info_p">
+                                example@mail.ru
+                            </p>
+                        </div>
+                    </form>
+                </div>
+                <div class="form_block" id="form_about_me">
+                    <div class="div_margin" id="slider">
+                        <div class="slider">
+                            <div class="item">
+                                <img src="photos/projects_titul/fish_monitoring.png" alt="Первый слайд">
+                            </div>
+
+                            <div class="item">
+                                <img src="photos/projects_titul/map_kaliningrad.png" alt="Второй слайд">
+                            </div>
+
+                            <div class="item">
+                                <img src="photos/projects_titul/oil_cage.png" alt="Третий слайд">
+                            </div>
+                            <div class="item">
+                                <img src="photos/projects_titul/platform_CROD.png" alt="Третий слайд">
+                            </div>
+                            <a class="prev" onclick="minusSlide()">&#10094;</a>
+                            <a class="next" onclick="plusSlide()">&#10095;</a>
+                        </div>
+
+                        <div class="slider-dots">
+                            <span class="slider-dots_item" onclick="currentSlide(1)"></span>
+                            <span class="slider-dots_item" onclick="currentSlide(2)"></span>
+                            <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+                            <span class="slider-dots_item" onclick="currentSlide(4)"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_block" id="form_projects">
+                    <div id="projects_block">
+                        <div class="two_projects_block">
+                            <div class="project_block">
+                                <a href="">
+                                    <img src="photos/projects_titul/oil_cage.png">
+                                </a>
+                            </div>
+                            <div class="project_block">
+                                <a href="">
+                                    <img src="photos/projects_titul/fish_monitoring.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="two_projects_block">
+                            <div class="project_block">
+                                <a href="">
+                                    <img src="photos/projects_titul/map_kaliningrad.png">
+                                </a>
+                            </div>
+                            <div class="project_block">
+                                <a href="">
+                                    <img src="photos/projects_titul/platform_CROD.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="two_projects_block">
+                            <div class="project_block">
+                                <a href="">
+                                    <img src="photos/projects_titul/sea_vr.png">
+                                </a>
+                            </div>
+                            <div class="project_block">
+                                <a href="">
+                                    <img src="photos/projects_titul/The_mask.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <div class="scale_fix" id="footer_block">
+            <div id="map">
+                <div id="map_div">
+                    <script type="text/javascript" charset="utf-8" async
+                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7a1b2125782d01e6d120462f06e2b081c3bc0865212074277dafd60d967e2fa1&amp;width=720&amp;height=270&amp;lang=ru_RU&amp;scroll=true">
+                    </script>
+                </div>
+            </div>
+            <div id="contacts">
+                <h2>
+                    Контакты
+                </h2>
+                <p>
+                    <span>Номер: </span>8 (4012) 592-944
+                </p>
+                <p>
+                    <span>Адрес: </span>Гурьевский городской округ,<br> пос. Ушаково, ул. Дружбы
+                </p>
+                <p>
+                    <span>Адрес сайта: </span><a href="https://dc.baltinform.ru/">dc.baltinform.ru</a>
+                </p>
+            </div>
+            <div id="authors">
+                <h2>
+                    Авторы
+                </h2>
+                <p>
+                    Никита Дильман<br><span>Серверная разработка</span>
+                </p>
+                <p>
+                    Тимур Дидигов<br><span>Дизайн/Project manager</span>
+                </p>
+                <p>
+                    Кирилл Саркисов<br><span>Дизайн/вёрстка сайта</span>
+                </p>
+            </div>
+            <div id="social_network_div_mobile">
+                <a id="vk" class="social_network_icon" href="https://vk.com/clubzrod" target="_blank"></a>
+                <a id="fb" class="social_network_icon" href="https://www.facebook.com/pg/centerdtc39/posts/"
+                    target="_blank"></a>
+                <a id="inst" class="social_network_icon" href="https://instagram.com/razvitie_odarennyh"
+                    target="_blank"></a>
+                <a id="YouTube" class="social_network_icon"
+                    href="https://www.youtube.com/channel/UCLalEO7ZFNBlXSNeLQQlnMw" target="_blank"></a>
+                <a id="tik" class="social_network_icon" href="https://www.tiktok.com/@razvitie_odarennyh  "
+                    target="_blank"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="account.js"></script>
+
+</html>
