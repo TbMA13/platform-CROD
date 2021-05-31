@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="for_all.css">
     <link rel="stylesheet" href="project_upload.css">
     <link rel="shortcut icon" href="photos/favicon.png" type="image/x-icon">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="chosen/chosen.jquery.min.js"></script>
+    <link rel="stylesheet" href="chosen/chosen.min.css" />
+    <script type="text/javascript">
+        $(function () {
+            $(".chosen-select").chosen();
+        });
+    </script>
     <title>Загрузка проекта</title>
 </head>
+
 <body>
     <main>
         <div id="cover">
@@ -28,13 +39,15 @@
                                     <p>
                                         Введите название проекта:
                                     </p>
-                                    <input required placeholder="Название проекта" type="text" name="project_name" id="project_name">
+                                    <input required placeholder="Название проекта" type="text" name="project_name"
+                                        id="project_name">
                                 </div>
                                 <div style="height: auto;" class="input_block">
                                     <p>
                                         Введите краткое описание вашего проекта:
                                     </p>
-                                    <textarea required maxlength="500" placeholder="Краткое описание проекта" type="text" name="annotation" id="annotation"></textarea>
+                                    <textarea required maxlength="500" placeholder="Краткое описание проекта"
+                                        type="text" name="annotation" id="annotation"></textarea>
                                 </div>
                                 <div class="input_block">
                                     <p>
@@ -50,26 +63,18 @@
                                 </div>
                                 <div class="input_block">
                                     <p>
-                                        Введите ФИО каждого участника через запятую:
+                                        Выберите участников проекта:
                                     </p>
-                                    <input name="partner" id="partner" placeholder="Участники" type="text">
+                                    <select No_results_text="Не найдено" class="chosen-select" multiple name="partners"
+                                        id="partners">
+                                        <option value="1">один</option>
+                                        <option value="2">два</option>
+                                        <option value="3">три</option>
+                                        <option value="4">четыре</option>
+                                    </select>
                                 </div>
-                                <!--
-                                <div class="input_block">
-                                    <p>
-                                        Введите даты потока:
-                                    </p>
-                                    <div class="input_date">
-                                        <label for="min-date">с</label>
-                                        <input type="date" name="min-date" id="min-date">
-                                        <label for="max-date">до</label>
-                                        <input type="date" name="max-date" id="max-date">
-                                    </div>
-                                </div>-->
-                                    <!--TODO добавить инпуты личной информации: школа, класс и т.д.-->
                             </div>
                             <div class="input_containers" id="right_input_container">
-                                <!--TODO допустимые типы файлов-->
                                 <div class="input_block">
                                     <p>
                                         Загрузите обложку Вашего проекта:
@@ -111,26 +116,16 @@
             </div>
         </div>
     </main>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-        $(document).ready(function() {
-        $("form").keydown(function(event){
-            if(event.keyCode == 13) {
-                event.preventDefault();
-                return false;
+        $(document).ready(function () {
+            $("form").keydown(function (event) {
+                if (event.keyCode == 13) {
+                    event.preventDefault();
+                    return false;
                 }
             });
         });
     </script>
-    <!--
-    <script>
-        let count = 0;
-        function Check()
-        {
-            alert('тук, тук');
-        }
-        Check();
-    </script>
-    -->
 </body>
+
 </html>
