@@ -1,32 +1,24 @@
-/*!БОЛЬШОЙ РАЗМЕР*/
-/*!БОЛЬШОЙ РАЗМЕР*/
-/*!БОЛЬШОЙ РАЗМЕР*/
-/*!БОЛЬШОЙ РАЗМЕР*/
-/*!БОЛЬШОЙ РАЗМЕР*/
-
-@media screen and (min-width: 1100px)
-{
-    main
-    {
+@media screen and (min-width: 1100px) {
+    main {
         margin-top: 0;
         height: auto;
     }
-    #cover
-    {
+
+    #cover {
         position: fixed !important;
         height: 100% !important;
-        background: linear-gradient(270deg, #FDFF9C 7.78%, #FCFF57 18.19%, #D9FF9C 29.07%, #D3FF8A 38.54%, #73FF71 48.48%, #72FF80 58.89%, #68FFA4 68.83%, #98E6FF 79.71%, #40D1FF 91.07%)!important;
+        background: linear-gradient(270deg, #FDFF9C 7.78%, #FCFF57 18.19%, #D9FF9C 29.07%, #D3FF8A 38.54%, #73FF71 48.48%, #72FF80 58.89%, #68FFA4 68.83%, #98E6FF 79.71%, #40D1FF 91.07%) !important;
     }
-    #project_container
-    {
+
+    #project_container {
         position: relative;
         margin: auto;
 
         display: flex;
         justify-content: center;
     }
-    #project_block
-    {
+
+    #project_block {
         position: relative;
         height: auto;
         width: 70%;
@@ -37,8 +29,8 @@
         flex-direction: column !important;
         justify-content: flex-start;
     }
-    #head_text_block
-    {
+
+    #head_text_block {
         margin: 10px 0 10px 0;
         width: 100%;
         position: relative;
@@ -46,15 +38,15 @@
         justify-content: center;
         align-content: space-around;
     }
-    #head_text_block > h1
-    {
+
+    #head_text_block>h1 {
         background: linear-gradient(270deg, #FFDD00 7.78%, #009D3E 62.55%, #23B0E6 98.65%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 
     }
-    #form_block
-    {
+
+    #form_block {
         margin: 0 auto 0 auto;
         width: 90%;
         position: relative;
@@ -62,8 +54,8 @@
         justify-content: center;
         align-content: center;
     }
-    form
-    {
+
+    form {
         position: relative;
         min-width: 100%;
         min-height: 100%;
@@ -73,75 +65,96 @@
         justify-content: space-evenly;
         align-content: center;
     }
-    #input_container
-    {
+
+    #input_container {
         min-width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
-    .input_containers
-    {
+
+    .input_containers {
         width: 40%;
         display: flex;
         flex-direction: column;
         align-content: flex-start;
         justify-content: flex-start;
     }
-    textarea
-    {
+
+    textarea {
         position: relative;
         left: 25px;
 
         width: auto;
-        min-width: 318px;
-        max-width: 318px;
+        min-width: 90%;
+        max-width: 90%;
 
         height: auto;
         min-height: 100px;
         max-height: 100px;
 
         margin-top: 10px;
-        
+
         padding-top: 5px;
         padding-left: 5px;
         padding-right: 5px;
         border-radius: 10px;
         outline: none;
         border: none;
-        
-        
+
+
 
         background: #ececec;
 
     }
-    .input_block
-    {
+
+    .input_block {
         position: relative;
         height: 60px;
-        width: 350px;
+        width: 100%;
         margin-bottom: 10px;
 
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
-    p
-    {
+
+    p {
         position: relative;
         left: 10px;
     }
-    .input_block > input
-    {
+
+    .input_block>input {
         position: relative;
         left: 25px;
-        width: auto;
+        width: 100%text;
         max-width: 90%;
         display: flex;
-        align-content: center; 
+        align-content: center;
     }
-    .input_date
-    {
+
+    select {
+        position: relative;
+        outline: none;
+        border: none;
+        border-radius: 7px;
+        height: 30px;
+        width: 260px;
+        background: #ececec;
+        padding-left: 5px;
+        padding-right: 5px;
+        left: 25px;
+    }
+
+    #right_input_container .input_block {
+        height: auto !important;
+    }
+
+    #right_input_container .input_block input {
+        margin: 10px 0 0 0;
+    }
+
+    .input_date {
         position: relative;
         left: 25px;
         width: 325px;
@@ -150,8 +163,8 @@
         align-content: space-between;
         justify-content: space-between;
     }
-    .input_date > label
-    {
+
+    .input_date>label {
         position: relative;
         top: 3px;
         height: 30px;
@@ -159,19 +172,19 @@
         align-content: center;
         justify-content: center;
     }
-    .input_date > input
-    {
+
+    .input_date>input {
         width: auto;
         position: relative;
     }
-    input[type="file"]
-    {
+
+    input[type="file"] {
         padding-top: 7px;
         padding-bottom: 7px;
         height: 21px;
     }
-    #submit_block
-    {
+
+    #submit_block {
         position: relative;
         margin: auto;
         margin-bottom: 10px;
@@ -179,29 +192,326 @@
         flex-direction: row;
         justify-content: center;
     }
-    input[type="submit"]
-    {
+
+    input[type="submit"] {
         min-width: 200px;
     }
 }
-/*!СРЕДНИЙ РАЗМЕР*/
-/*!СРЕДНИЙ РАЗМЕР*/
-/*!СРЕДНИЙ РАЗМЕР*/
-/*!СРЕДНИЙ РАЗМЕР*/
-/*!СРЕДНИЙ РАЗМЕР*/
 
-@media screen and (min-width: 660px) and (max-width: 970px)
-{
-    
+
+
+
+
+
+@media screen and (min-width: 660px) and (max-width: 1099px) {
+    main {
+        margin-top: 0;
+        height: auto;
+    }
+
+    #cover {
+        position: fixed !important;
+        height: 100% !important;
+        background: linear-gradient(270deg, #FDFF9C 7.78%, #FCFF57 18.19%, #D9FF9C 29.07%, #D3FF8A 38.54%, #73FF71 48.48%, #72FF80 58.89%, #68FFA4 68.83%, #98E6FF 79.71%, #40D1FF 91.07%) !important;
+    }
+
+    #project_container {
+        position: relative;
+        margin: auto;
+        height: auto;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    #project_block {
+        position: relative;
+        height: auto;
+        width: 70%;
+        margin: 50px auto 50px auto;
+
+        display: flex;
+        flex-direction: column !important;
+        justify-content: flex-start;
+    }
+
+    #head_text_block {
+        margin: 10px 0 10px 0;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-content: space-around;
+    }
+
+    #form_block {
+        margin: 0 auto 0 auto;
+        width: 90%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    form {
+        position: relative;
+        min-width: 100%;
+        min-height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+
+    #input_container {
+        min-width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .input_containers {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: flex-start;
+    }
+
+    textarea {
+        position: relative;
+        left: 25px;
+        font-size: 17px;
+
+        width: 100%;
+        min-width: 340px;
+        max-width: 340px;
+
+        height: auto;
+        min-height: 100px;
+        max-height: 100px;
+
+        margin-top: 10px;
+
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+
+
+
+        background: #ececec;
+
+    }
+
+    .input_block {
+        position: relative;
+        min-height: 60px;
+        width: 100% !important;
+        margin-bottom: 10px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .input_block input {
+        position: relative;
+        left: 25px;
+    }
+
+    p {
+        width: 100%;
+        position: relative;
+        left: 10px;
+    }
+
+    input[type="file"] {
+        font-size: 15px !important;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        height: 21px;
+    }
+
+    #submit_block {
+        position: relative;
+        margin: auto;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    input[type="submit"] {
+        min-width: 200px;
+    }
 }
 
-/*!МОБИЛЬНЫЕ УСТРОЙСТВА*/
-/*!МОБИЛЬНЫЕ УСТРОЙСТВА*/
-/*!МОБИЛЬНЫЕ УСТРОЙСТВА*/
-/*!МОБИЛЬНЫЕ УСТРОЙСТВА*/
-/*!МОБИЛЬНЫЕ УСТРОЙСТВА*/
 
-@media screen and (maw-width: 659px)
-{
-    
+
+
+
+
+
+@media screen and (max-width: 659px) {
+    #cover {
+        position: fixed !important;
+        height: 100% !important;
+        background: linear-gradient(270deg, #FDFF9C 7.78%, #FCFF57 18.19%, #D9FF9C 29.07%, #D3FF8A 38.54%, #73FF71 48.48%, #72FF80 58.89%, #68FFA4 68.83%, #98E6FF 79.71%, #40D1FF 91.07%) !important;
+    }
+
+    main {
+        margin-top: 0;
+        height: auto;
+    }
+
+    #project_container {
+        position: relative;
+        margin: auto;
+        height: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #project_block {
+        position: relative;
+        height: auto;
+        width: 95%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+
+    #head_text_block {
+        margin: 10px 0 10px 0;
+        width: 100%;
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+        align-content: space-around;
+    }
+
+    #form_block {
+        height: auto;
+        margin: 0 auto 0 auto;
+        width: 90%;
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    form {
+        position: relative;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+
+    #input_container {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .input_containers {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: flex-start;
+    }
+
+    .input_block {
+        position: relative;
+        height: auto;
+        margin-bottom: 10px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    p {
+        margin-bottom: 2px;
+        font-size: 18px;
+        position: relative;
+    }
+
+    .input_block>input {
+        position: relative;
+        width: 95%;
+
+        display: flex;
+        align-content: center;
+    }
+
+    textarea {
+        position: relative;
+        font-size: 17px;
+        width: 95%;
+        min-width: 95%;
+        max-width: 95%;
+
+        height: auto;
+        min-height: 100px;
+        max-height: 100px;
+
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 7px;
+        outline: none;
+        border: none;
+        background: #ececec;
+    }
+
+    input[type="file"] {
+        font-size: 15px !important;
+        max-width: 100%;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        height: 21px;
+    }
+
+    select {
+        position: relative;
+        outline: none;
+        border: none;
+        border-radius: 7px;
+        height: 33px;
+        background: #ececec;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #submit_block {
+        position: relative;
+        margin: auto;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    input[type="submit"] {
+        min-width: 200px;
+    }
 }

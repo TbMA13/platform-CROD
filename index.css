@@ -100,6 +100,8 @@
         border-radius: 20px;
         min-width: 100%;
         min-height: 100%;
+        max-width: 100%;
+        max-height: 100%;
     }
     /**превьюе проектов*/
     #projects_container_index
@@ -228,28 +230,205 @@
 
 }
 
-/*!СРЕДНИЙ РАЗМЕР*/
-/*!СРЕДНИЙ РАЗМЕР*/
-/*!СРЕДНИЙ РАЗМЕР*/
-/*!СРЕДНИЙ РАЗМЕР*/
-/*!СРЕДНИЙ РАЗМЕР*/
 
-@media screen and (min-width: 660px) and (max-width: 970px)
+
+
+
+
+
+@media screen and (min-width: 660px) and (max-width: 1099px)
 {
-    
+    #cover {
+        height: auto;
+        justify-content: flex-start;
+    }
+    #cover_block
+    {
+        position: relative;
+        margin: auto;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+    }
+    #text_under_logo {
+        display: none;
+    }
+    #logo_cover_img {
+        object-fit: cover;
+        height: 300px;
+        margin: auto;
+    }
+    #logo_cover
+    {
+        position: relative;
+        width: 100%;
+        margin-top: 30px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+    }
+    #head_text
+    {
+        position: relative;
+    }
+    #head_text > p
+    {
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    #social_network_div
+    {
+        position: relative;
+        margin: 10px auto 0 auto;
+        width: 50%;
+        height: 41px;
+        z-index: 50;
+
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-between;
+    }
+    .social_network_icon
+    {
+        z-index: 51;
+        min-width: 41px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #vk{background-image: url(photos/icons/VK.png);}
+    #fb{background-image: url(photos/icons/Facebook.png);}
+    #inst{background-image: url(photos/icons/Instagram.png);}
+    #YouTube{background-image: url(photos/icons/YouTube.png);}
+    #tik{background-image: url(photos/icons/TikTok.png);}
+
+    /**видео*/
+    #video_container
+    {
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #video_div
+    {
+        position: relative;
+        width: 80%;
+        height: auto;
+        z-index: 50;
+    }
+    video
+    {
+        border-radius: 20px;
+        height: auto !important;
+        width: 100% !important;
+        outline: none;
+        z-index: 51;
+    }
+    /**превьюе проектов*/
+    #projects_container_index
+    {
+        margin-top: 100px;
+        position: relative;
+        width: 100%;
+        height: auto;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    #projects_text_index
+    {
+        position: absolute; 
+        top: 0px;
+        font-size: 35px;
+    }
+    #projects_div_index
+    {
+        position: relative;
+        top: 100px;
+        height: auto;
+        width: 90%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .two_projects_div_index
+    {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .two_projects_div_index > a
+    {
+        width: 600px;
+        margin-bottom: 40px;
+    }
+    .two_projects_div_index > a > img
+    {
+        margin: auto;
+        object-fit: contain;
+        border-radius: 10px;
+        filter: drop-shadow(5px 5px 7px rgba(0, 0, 0, 0.25));
+    }
+    .under_projects_search_div_index
+    {
+        width: 100%;
+        position: relative;
+        margin-bottom: 40px;
+
+        display: flex;
+        justify-content: center;
+        align-items: content;
+    }
+    .advanced_search_index
+    {
+        position: relative;
+        height: auto;
+        border-radius: 15px;
+        width: auto;
+        max-width: 80%;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f2f2f2;
+        filter: drop-shadow(5px 5px 7px rgba(0, 0, 0, 0.25));
+        
+    }
+    .advanced_search_index > a
+    {
+        text-decoration: none;
+        text-align: center;
+        color: #000000;
+        font-size: 25px;
+        padding: 10px;
+    }
 }
 
-/*!МОБИЛЬНЫЕ УСТРОЙСТВА*/
-/*!МОБИЛЬНЫЕ УСТРОЙСТВА*/
-/*!МОБИЛЬНЫЕ УСТРОЙСТВА*/
-/*!МОБИЛЬНЫЕ УСТРОЙСТВА*/
-/*!МОБИЛЬНЫЕ УСТРОЙСТВА*/
+
+
+
+
+
 
 @media screen and (max-width: 659px)
 {
     #cover
     {
-        height: 500px;
+        height: 400px;
         background: linear-gradient(0deg, #FFFFFF 12.54%, rgba(255, 255, 255, 0) 100%), linear-gradient(270deg, #FDFF9C 7.78%, #FCFF57 18.19%, #D9FF9C 29.07%, #D3FF8A 38.54%, #73FF71 48.48%, #72FF80 58.89%, #68FFA4 68.83%, #98E6FF 79.71%, #40D1FF 91.07%);
     }
     #cover_block
@@ -313,6 +492,7 @@
     }
     video
     {
+        border-radius: 20px;
         outline: none;
         z-index: 51;
         min-width: 100%;

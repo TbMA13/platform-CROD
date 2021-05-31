@@ -1,17 +1,9 @@
-/*!БОЛЬШОЙ РАЗМЕР*/
-/*!БОЛЬШОЙ РАЗМЕР*/
-/*!БОЛЬШОЙ РАЗМЕР*/
-/*!БОЛЬШОЙ РАЗМЕР*/
-/*!БОЛЬШОЙ РАЗМЕР*/
-
-@media screen and (min-width: 1100px)
-{
-    #cover
-    {
+@media screen and (min-width: 1100px) {
+    #cover {
         position: absolute !important;
     }
-    #project_container
-    {
+
+    #project_container {
         margin: auto;
         position: relative;
         top: 30px;
@@ -22,14 +14,27 @@
         height: auto;
         width: 100%;
     }
-    #content
-    {
+
+    #content {
         position: relative;
         width: 80%;
         height: auto;
     }
-    #top_preview_name_block
-    {
+
+    #project_name_block {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    #project_name_block p {
+        font-size: 40px;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    #top_preview_name_block {
         position: relative;
         width: 100%;
         height: auto;
@@ -39,53 +44,53 @@
         flex-direction: row;
         justify-content: space-between;
     }
-    #project_preview
-    {
+
+    #project_preview {
         position: relative;
-        width: 711px;
+        width: 70%;
         height: 400px;
     }
-    #preview_img
-    {
-        width: 711px;
+
+    #preview_img {
+        width: 100%;
+        object-fit: cover;
         height: 400px;
         border-radius: 12px;
         filter: drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.25));
     }
-    #project_info
-    {
+
+    #project_info {
         position: relative;
-        width: 30%;
+        width: 25%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
-    #project_teacher
-    {
+
+    #project_teacher {
         width: 100%;
-        height: 80px;
         display: flex;
         flex-direction: column;
     }
-    .head_text
-    {
+
+    .head_text {
         width: auto;
         text-align: center;
         margin: 5px auto 0 auto;
         font-size: 25px;
 
-        background: linear-gradient(270deg, #FFDD00 7.78%, #009D3E 62.55%, #23B0E6 98.65%);
+        background: linear-gradient(270deg, #d6ba00 7.78%, #009D3E 62.55%, #23B0E6 98.65%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    .paragraph2
-    {
+
+    .paragraph2 {
         text-align: center;
         font-size: 20px;
         margin: 0 0 10px 0;
     }
-    #project_files
-    {
+
+    #project_files {
         position: relative;
         width: 100%;
         height: auto;
@@ -95,12 +100,11 @@
         align-content: center;
         align-items: center;
     }
-    #files
-    {
+
+    #files {
         position: relative;
         margin-bottom: 5px;
-        height: auto;
-        width: 50%;
+        width: 70%;
 
         display: flex;
         flex-direction: row;
@@ -109,83 +113,91 @@
         align-content: center;
         align-items: center;
     }
-    .files_icons
-    {
+
+    .files_icons {
         margin-top: 5px;
         height: 50px;
         object-fit: contain;
     }
-    #change
-    {
+
+    #change {
         display: flex;
         flex-direction: column;
     }
 
-    #middle_annotation_photo_block
-    {
+    #middle_annotation_photo__authors_block {
         position: relative;
         width: 100%;
         height: auto;
 
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
-    #photo_block
-    {
-        width: 711px;
-        height: 480px;
-    }
-    #photo
-    {
-        width: 711px;
-        height: 480px;
-        border-radius: 12px;
-        filter: drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.25));
-        object-fit: cover;
-    }
-    #annotation_block
-    {
+
+    #annotation_block {
+        margin-bottom: 50px;
         position: relative;
-        width: 30%;
+        width: 100%;
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
     }
-    #annotation
-    {
+
+    #annotation {
         text-align: justify;
         font-size: 20px;
-        width: 90%;
+        width: 95%;
         margin-top: 1px;
+        margin-bottom: 10px;
+    }
+
+    #photo_block {
+        width: 70%;
+        height: 480px;
+    }
+
+    #photo {
+        width: 100%;
+        height: 480px;
+        border-radius: 12px;
+        filter: drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.25));
+        object-fit: cover;
+    }
+
+    #authors_block {
+        position: relative;
+        width: 25%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .authors_name_paragraph {
+        color: #23B0E6;
+        text-decoration: none;
+
+        font-size: 20px;
+        margin: 12px auto 0 auto;
     }
 }
-/*!СРЕДНИЙ РАЗМЕР*/
-/*!СРЕДНИЙ РАЗМЕР*/
-/*!СРЕДНИЙ РАЗМЕР*/
-/*!СРЕДНИЙ РАЗМЕР*/
-/*!СРЕДНИЙ РАЗМЕР*/
 
-@media screen and (min-width: 660px) and (max-width: 970px)
-{
-    
-}
 
-/*!МОБИЛЬНЫЕ УСТРОЙСТВА*/
-/*!МОБИЛЬНЫЕ УСТРОЙСТВА*/
-/*!МОБИЛЬНЫЕ УСТРОЙСТВА*/
-/*!МОБИЛЬНЫЕ УСТРОЙСТВА*/
-/*!МОБИЛЬНЫЕ УСТРОЙСТВА*/
 
-@media screen and (max-width: 659px)
-{
-    #cover
-    {
+
+
+
+@media screen and (min-width: 660px) and (max-width: 1099px) {
+    #cover {
         position: absolute !important;
     }
-    #project_container
-    {
+
+    #project_container {
         margin: auto;
         position: relative;
         top: 20px;
@@ -196,16 +208,34 @@
         height: auto;
         width: 100%;
     }
-    #content
-    {
+
+    #content {
         position: relative;
         width: 90%;
         height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
     }
-    #top_preview_name_block
-    {
+
+    #project_name_block {
         position: relative;
-        width: 100%;
+        width: 90%;
+        height: auto;
+        margin-bottom: 25px;
+    }
+
+    #project_name_block p {
+        font-size: 40px;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    #top_preview_name_block {
+        position: relative;
+        width: 90%;
+        margin: auto;
         height: auto;
         margin-bottom: 25px;
 
@@ -214,21 +244,21 @@
         justify-content: flex-start;
         align-items: center;
     }
-    #project_preview
-    {
+
+    #project_preview {
         position: relative;
         width: auto;
         height: auto;
     }
-    #preview_img
-    {
+
+    #preview_img {
         width: 100%;
         height: auto;
         border-radius: 10px;
         filter: drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.25));
     }
-    #project_info
-    {
+
+    #project_info {
         position: relative;
         width: 100%;
         margin-top: 25px;
@@ -238,24 +268,24 @@
         justify-content: flex-start;
         align-items: center;
     }
-    .head_text
-    {
+
+    .head_text {
         text-align: center;
         margin: 0 10px 0 10px;
         font-size: 25px;
-        background: linear-gradient(280deg, #FFDD00 30%, #009D3E 50%, #23B0E6 90%);
+        background: linear-gradient(280deg, #d6ba00 30%, #009D3E 50%, #23B0E6 90%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    .paragraph2
-    {
+
+    .paragraph2 {
         position: relative;
         text-align: center;
         font-size: 21px;
         margin-right: 10px;
     }
-    #change
-    {
+
+    #change {
         width: 100%;
         min-height: 49px;
         height: auto;
@@ -264,8 +294,8 @@
         justify-content: flex-start;
         align-items: center;
     }
-    #project_teacher
-    {
+
+    #project_teacher {
         margin-top: 25px;
         width: 100%;
         min-height: 60px;
@@ -276,8 +306,8 @@
         justify-content: flex-start;
         align-items: center;
     }
-    #project_files
-    {
+
+    #project_files {
         margin-top: 25px;
         width: 100%;
         height: auto;
@@ -286,8 +316,8 @@
         justify-content: flex-start;
         align-items: center;
     }
-    #files
-    {
+
+    #files {
         position: relative;
         height: auto;
 
@@ -297,20 +327,21 @@
         flex-wrap: wrap;
         align-items: center;
     }
-    #files a
-    {
+
+    #files a {
         margin: 10px 10px 10px 0;
         height: 50px;
     }
-    .files_icons
-    {
+
+    .files_icons {
         max-height: 50px;
         object-fit: contain;
     }
-    #middle_annotation_photo_block
-    {
+
+    #middle_annotation_photo__authors_block {
         position: relative;
-        width: 100%;
+        width: 90%;
+        margin: auto;
         height: auto;
 
         display: flex;
@@ -318,8 +349,8 @@
         justify-content: flex-start;
         align-items: center;
     }
-    #annotation_block
-    {
+
+    #annotation_block {
         position: relative;
         width: 100%;
         margin-bottom: 25px;
@@ -328,21 +359,21 @@
         justify-content: flex-start;
         align-items: center;
     }
-    #annotation
-    {
+
+    #annotation {
         text-align: justify;
         font-size: 20px;
         width: 95%;
         margin-bottom: 10px;
     }
-    #photo_block
-    {
+
+    #photo_block {
         position: relative;
         width: 100%;
-        height: auto;
+        margin-bottom: 25px;
     }
-    #photo
-    {
+
+    #photo {
         width: 100%;
         height: auto;
         border-radius: 10px;
@@ -350,4 +381,226 @@
         object-fit: contain;
     }
 
+    #authors_block {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .authors_name_paragraph {
+        color: #23B0E6;
+        text-decoration: none;
+        font-size: 25px;
+        margin: 10px auto;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 659px) {
+    #cover {
+        position: absolute !important;
+    }
+
+    #project_container {
+        margin: auto;
+        position: relative;
+        top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: auto;
+        width: 100%;
+    }
+
+    #content {
+        position: relative;
+        width: 90%;
+        height: auto;
+    }
+
+    #project_name_block {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin-bottom: 25px;
+    }
+
+    #project_name_block p {
+        font-size: 40px;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    #top_preview_name_block {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin-bottom: 25px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #project_preview {
+        position: relative;
+        width: auto;
+        height: auto;
+    }
+
+    #preview_img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        filter: drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.25));
+    }
+
+    #project_info {
+        position: relative;
+        width: 100%;
+        margin-top: 25px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .head_text {
+        text-align: center;
+        margin: 0 10px 0 10px;
+        font-size: 25px;
+        background: linear-gradient(280deg, #d6ba00 30%, #009D3E 50%, #23B0E6 90%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .paragraph2 {
+        position: relative;
+        text-align: center;
+        font-size: 21px;
+        margin-right: 10px;
+    }
+
+    #change {
+        width: 100%;
+        min-height: 49px;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #project_teacher {
+        margin-top: 25px;
+        width: 100%;
+        min-height: 60px;
+        height: auto;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #project_files {
+        margin-top: 25px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #files {
+        position: relative;
+        height: auto;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    #files a {
+        margin: 10px 10px 10px 0;
+        height: 50px;
+    }
+
+    .files_icons {
+        max-height: 50px;
+        object-fit: contain;
+    }
+
+    #middle_annotation_photo__authors_block {
+        position: relative;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #annotation_block {
+        position: relative;
+        width: 100%;
+        margin-bottom: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #annotation {
+        text-align: justify;
+        font-size: 20px;
+        width: 95%;
+        margin-bottom: 10px;
+    }
+
+    #photo_block {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin-bottom: 25px;
+    }
+
+    #photo {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        filter: drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.25));
+        object-fit: contain;
+    }
+
+    #authors_block {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .authors_name_paragraph {
+        color: #23B0E6;
+        text-decoration: none;
+        font-size: 22px;
+        margin: 10px auto;
+    }
 }
