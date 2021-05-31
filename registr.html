@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="shortcut icon" href="photos/favicon.png" type="image/x-icon">
     <title>Регистрация</title>
 </head>
+
 <body>
     <div id="cover">
 
@@ -44,7 +46,8 @@
                                 <input required placeholder="Электронная почта" type="email">
                             </p>
                             <p class="registr_p">
-                                <input required placeholder="Номер телефона" type="tel" pattern="8[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]">
+                                <input required placeholder="Номер телефона" type="tel"
+                                    pattern="8[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]">
                             </p>
                             <p class="registr_p">
                                 <input required placeholder="Придумайте пароль" type="password">
@@ -61,15 +64,18 @@
                             <div style="width: 240px !important;" class="registr_p">
                                 <div class="law_block">
                                     <input required name="law" type="checkbox">
-                                    <label for="law">Я ознакомлен и согласен с <a class="link_colors" href="">правилами сайта</a></label>
+                                    <label for="law">Я ознакомлен и согласен с <a class="link_colors" href="">правилами
+                                            сайта</a></label>
                                 </div>
                                 <div class="law_block">
                                     <input required name="processing" type="checkbox">
-                                    <label for="processing">Я даю согласие на <a class="link_colors" href="">обработку персональных данных</a></label>
+                                    <label for="processing">Я даю согласие на <a class="link_colors" href="">обработку
+                                            персональных данных</a></label>
                                 </div>
                             </div>
                             <p class="registr_p">
-                                <input required id="submit" class="registr_submit" type="submit" value="Зарегестрироваться">
+                                <input required id="submit" class="registr_submit" type="submit"
+                                    value="Зарегестрироваться">
                             </p>
                         </form>
                     </div>
@@ -84,9 +90,10 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-    $("select").change(function(){
-        if($(this).val() == "Наставник") $('#change').attr("placeholder", "Место работы");
-        if($(this).val() == "Обучающийся") $('#change').attr("placeholder", "Образовательная организация");
+    $("select").change(function () {
+        if ($(this).val() == "Наставник") $('#change').attr("placeholder", "Место работы");
+        if ($(this).val() == "Обучающийся") $('#change').attr("placeholder", "Образовательная организация");
     });
 </script>
+
 </html>
